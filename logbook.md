@@ -3,6 +3,7 @@
 1. How to use user data to train model?
     - Intuited approach: save conversations and use the parsed context to append user's 
       responses to training data for chatbot
+    - RNN -- ???
 2. How can we give the bot a personality?
     - Can we just dump in a corpus of words from a selected personality
 3. Is it a bad idea to use RNN to try to generate responses to questions unknown?
@@ -10,9 +11,24 @@
     - I.e: we give a broad generalized question ot the user about
 
 ## [RNN](https://towardsdatascience.com/personality-for-your-chatbot-with-recurrent-neural-networks-2038f7f34636)
-- RNN = Recurrent Neural Network
+- RNN = Recurrent Neural Network - [Crash Course](https://machinelearningmastery.com/crash-course-recurrent-neural-networks-deep-learning/)
     + Deep learning model, handles sequences
-    + 
+    + Connections w/ loops - add feedback and memory to network overtime
+        * Allows network to learn/generalize across a sequence of inputs rather than patterns
+- Basic concepts of RNN:
+    + Theano
+    + Tensorflow
+- LSTM? - long/short term memory layer
+    + Powerful RNN - particulary effective when stacked into deep configuration
+        * State of the art results on a diverse array of problems (language translation,
+          automatic captioning of images, videos, etc.)
+    + Hot-encoding a word -- ?
+    + Use word embeddings -- ?
+
+## Chatbot Training
+- Build a training set with a question/answer-solution
+- Don't teach question v.s response, instead build an internal representation that can
+  coherent generate text
 
 ## [Deep Learning for Chatbots](http://www.wildml.com/2016/07/deep-learning-for-chatbots-2-retrieval-based-model-tensorflow/et)
 Two model's for chatbots:

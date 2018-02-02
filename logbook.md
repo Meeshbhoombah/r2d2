@@ -3,7 +3,6 @@
 1. How to use user data to train model?
     - Intuited approach: save conversations and use the parsed context to append user's 
       responses to training data for chatbot
-    - RNN -- ???
 2. How can we give the bot a personality?
     - Can we just dump in a corpus of words from a selected personality
 3. Is it a bad idea to use RNN to try to generate responses to questions unknown?

@@ -55,7 +55,7 @@ Give an example
 Add additional notes about how to deploy this on a live system
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) 
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) 
 file for details
 
 ## Acknowledgments

@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+# Dotenv
+.env
+
+# Mac
+.DS_Store
+
 # Secrets
 .secret
 
-# Mac
+# Vim
 *.swp
 *.swo
 
@@ -106,3 +113,4 @@ ENV/
 
 # mypy
 .mypy_cache/
+

@@ -6,18 +6,27 @@
 		color:#00ED94;
 		font-family: "Fira Mono";
 		font-weight: normal;
-		letter-spacing: 3px;
-		padding-top: 169px;
+		letter-spacing: 4px;
+		padding-top: 300px;
+		padding-bottom: 0px;
 	}
 	
 	#first {
 	}
 	
 	input {
-		border: none;
+		border: 0 !important;
 		outline: none;
 		font-weight: bold;
-		font-size: 2em;
+		font-size: 100pt;
+		text-align: center;
+	}
+
+
+	textarea:focus,input:focus,input:active {
+	  outline: none;
+	  box-shadow: none;
+	  size: 20px;
 	}
 
 	h2 {
@@ -25,7 +34,6 @@
 		font-family: "Fira Mono";
 		font-weight: bold;
 		letter-spacing: 3px;
-
 	}
 
 	button {
@@ -35,16 +43,15 @@
 	}
 
 	.btn {
-		letter-spacing: 3px;
+		letter-spacing: 4px;
 		font-family: "Fira Mono";
 		font-weight: bold;
-
+		font-size: 40px;
 	}
 
 	.btn:focus,.btn:active {
-	  outline: none !important;
+	  outline: none;
 	  box-shadow: none;
-
 	}
 	
 	.footer {
@@ -66,14 +73,13 @@
 			margin: 0; 
 	}
 	.form-inline:focus, .form-inline:active:focus, .form-inline.active:focus, .form-inline {
+		padding-top: 50px;
 		display: inline-block;
 		text-align: center;
 		outline: none;
 		border: none;
-		min-width:50px!important;
   		max-width:99.99%!important;
   		box-shadow:none;
-
   	}
 	</style>
 
@@ -84,21 +90,20 @@
 	<form class="form-inline" name="formRoom" id="formRoom">
 		
 		<input class="form-control mb-2 mr-sm-2 mb-sm-0" type="number" minlength=1 class="quantity" id="first" name="first" 
-				maxlength=1 oninput="autotab(this, document.formRoom.second)" placeholder="_">
-		<input  class="form-control" id="second" type="number" minlength=1 class="quantity" name="second" 
-				maxlength=1 oninput="autotab(this, document.formRoom.third)" placeholder="_">
-		<input  class="form-control" id="third" type="number" minlength=1 class="quantity" name= "third" 
-				maxlength=1 oninput="autotab(this, document.formRoom.fourth)" placeholder="_">
-		<input  class="form-control" id="fourth" type="number" minlength=1 class="quantity" name= "fourth" 
-				maxlength=1 placeholder="_">
-
+				maxlength=4  placeholder="_ _ _ _">
+		
 	</form>
 </div>
 
 
 
-
-<button id="create" class="btn" onclick="window.location.href = '{{ url_for('create') }}';">OR CREATE A NEW ROOM</button>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<button id="create" class="btn" onclick="window.location.href = '{{ url_for('create') }}';">OR CREATE A NEW ROOM</button>
+		</div>
+	</div>
+</div>
 
 <div class="footer" onclick="window.location.href = '{{ url_for('settings') }}';">
   <p>@uniquename</p>

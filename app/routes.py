@@ -1,30 +1,40 @@
 from app import app
 from flask import render_template, flash, redirect 
-from app.forms import LoginForm
+from app.forms import LoginForm, SigninForm
 
 
 @app.route('/')
 @app.route('/index')
 def index():
-	user = {'username':'Miguel'}
-	posts = [
-		{
-			'author': {'username': 'John'},
-			'body': 'Beautiful day in Portland'
-		},
-		{
-
-			'author': {'username': 'Susan'},
-			'body': 'The Avengers movie was so cool!'
-		}
-	]
-	return render_template('index.html', title='Home', user=user, posts=posts)
+	
+	return render_template('index.html', title='Home')
 
 
 @app.route('/login', methods=['GET','POST'])
 def login():
 	form = LoginForm()
 	if form.validate_on_submit():
-		flash('Login requested for user {}, remember_me={}'.format(form.username.data, form.remember_me.data))
-		return redirect(url_for('index'))
-	return render_template('login.html', title="Sign In", form=form)
+		flash('Login requested for user {}'.format(form.username.data))
+		return redirect(url_for(join))
+	return render_template('login.html', title="log in", form=form)
+
+
+@app.route('/join', methods=['GET','POST'])
+def join():
+	return render_template('join.html', title="join")
+
+@app.route('/settings', methods=['GET'])
+def settings():
+	return render_template('settings.html', title="settings")
+
+@app.route('/home', methods=['GET', 'POST'])
+def home():
+	return render_template('home.html', title="home")
+
+@app.route('/create', methods=['GET', 'POST'])
+def create():
+	return render_template('create.html', title="create room")
+
+@app.route('/room_code', methods=['GET'])
+def room_code():
+	return render_template('room_code.html', title="room code")

@@ -1,0 +1,45 @@
+<h1>JOIN A ROOM</h1>
+<script type="text/javascript">
+	function autotab(current, to)
+	{
+		if(current.getAttribute && current.value.length==current.getAttribute("maxlength")) {
+			to.focus()
+		}
+	}
+
+</script>
+
+<form name="formRoom">
+	
+	<input type="number" minlength=1 class="quantity" name="first" maxlength=1 oninput="autotab(this, document.formRoom.second)">
+	<input type="number" minlength=1 class="quantity" name="second" maxlength=1 oninput="autotab(this, document.formRoom.third)">
+	<input type="number" minlength=1 class="quantity" name= "third" maxlength=1 oninput="autotab(this, document.formRoom.fourth)">
+	<input type="number" minlength=1 class="quantity" name= "fourth" maxlength=1>
+
+
+	<style type="text/css">
+		.quantity::-webkit-inner-spin-button, 
+		.quantity::-webkit-outer-spin-button { 
+  		-webkit-appearance: none; 
+  		margin: 0; 
+	}
+	</style>
+</form>
+
+<h2 onclick="window.location.href = '{{ url_for('join') }}';">OR CREATE A NEW ROOM</h2>
+
+
+<div class="footer" onclick="window.location.href = '{{ url_for('settings') }}';">
+  <p>Footer</p>
+</div>
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #00ED94;
+    text-align: center;
+}
+</style>

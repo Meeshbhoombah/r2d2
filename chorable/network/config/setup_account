@@ -1,4 +1,0 @@
-#!/bin/bash
-
-geth --password config/password account new
-

@@ -1,0 +1,10 @@
+{
+  "name": "chorable",
+  "version": "1.0.0",
+  "description": "Dealing with Chores, maybe Horribly",
+  "scripts": {
+    "start": "n"
+  },
+  "author": "@meeshbhoombah",
+  "license": "ISC"
+}

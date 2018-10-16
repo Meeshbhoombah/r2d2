@@ -4,6 +4,13 @@
   "license": "ISC",
   "version": "1.0.0",
   "description": "Gamifying Chores",
-  "scripts": {
+  "scripts": {},
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "webpack": "^4.20.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.1.9"
   }
 }

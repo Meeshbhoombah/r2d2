@@ -16,7 +16,7 @@ As a user
 - I want to see my assigned chores
     so that I can do chores
 - I want to see my bet
-    so that I can reason why I was assigned those chores:w
+    so that I can reason why I was assigned those 
 - I want to complete a chore
     so that I can win my money back
 

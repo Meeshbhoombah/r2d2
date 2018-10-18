@@ -7,8 +7,8 @@ As a whitelisted user
 I want to login
 so that I can participate in Chorable
 
-## Homepage
-As a user
+## Dashboard (main)
+As a user...
 - I want to see the winnable pool 
     so that I want to do chores
 - I want to see the leaderboard
@@ -19,4 +19,6 @@ As a user
     so that I can reason why I was assigned those 
 - I want to complete a chore
     so that I can win my money back
+- I want to confirm someone else's chore
+    so that I can be assigned less chores
 

@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
+/*
+ * index.js
+ * Entrypoint for the `Chorable` web app
+ *
+ */ 
 
 
-import App from './App';
-// TODO: global css styling
+import React             from 'react';
+import ReactDOM          from 'react-dom';
+import { AppContainer }  from 'react-hot-loader';
 
-function renderApp() {
+
+import { App }           from './App';
+
+
+// import global css styles to render on #root
+async function renderApp() {
   ReactDOM.render(
-    <AppContainer>
-      <App />
-    </AppContainer>,
-    document.getElementById('root')
+    <App Container>
+      <App/>
+    </App Container>,
+    document.querySelector('#root');
   );
 };
 

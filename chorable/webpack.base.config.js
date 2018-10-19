@@ -1,6 +1,6 @@
 const path                = require('path')
 ,     webpack             = require('webpack')
-,     HTMLWebpackPlugin   = require('html-webpack-plugin');
+,     HtmlWebpackPlugin   = require('html-webpack-plugin');
 
 
 basePath = process.cwd();
@@ -29,7 +29,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-            presets: ['react-hot-loader/babel', 'babel-preset-env'] 
+            presets: ['@babel/preset-react', '@babel/preset-env'] 
         }
       },
       {
@@ -44,8 +44,8 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
    
     // build bundles in body of template 
-    new HTMLWebpackPlugin({
-      template: 'src/index.html'
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
     }),
     
     new webpack.DefinePlugin({

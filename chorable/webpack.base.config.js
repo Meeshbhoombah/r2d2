@@ -10,7 +10,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      /* TODO: Aliases for Modules */
       src: path.resolve(basePath, 'src')
     }
   },

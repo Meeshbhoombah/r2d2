@@ -1,10 +1,3 @@
-/*
-* App.jx
-* Entrypoint for the `Chorable` web app
-*
-*/ 
-
-
 import React, { Component } from 'react';
 
 

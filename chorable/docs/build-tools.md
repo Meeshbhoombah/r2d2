@@ -1,13 +1,12 @@
 # Build Tools
 
 ## Todos
-- [ ] Install...
+- [x] Install...
     + [x] react/react-dom
     + [x] webpack
     + [x] webpack-dev-server (dev)
     + [x] style-loader/css-loader
     + [x] babel-loader
-        * [ ] babel-preset-env
     + [x] html-webpack-plugin (dev)
     + [ ] react-hot-module
     + [x] webpack-merge (dev)

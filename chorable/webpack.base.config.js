@@ -29,7 +29,10 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-            presets: ['@babel/preset-react', '@babel/preset-env'] 
+          presets: [
+            '@babel/preset-react',
+            'env',
+          ] 
         }
       },
       {

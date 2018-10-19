@@ -5,9 +5,9 @@
  */ 
 
 
-import React     from 'react'
-,      ReactDOM  from 'react-dom'
-,      App       from './App';
+import React     from 'react';
+import ReactDOM  from 'react-dom';
+import App       from './App';
 
 // import global css styles to render on #root
 

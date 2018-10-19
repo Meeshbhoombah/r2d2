@@ -56,6 +56,7 @@ Automatically builds `index.html` with bundled assets
 
 ## References
 - [react-spa-template](https://github.com/meetajhu/react-spa-template)
+- [react-hot-loader-examples](https://github.com/gaearon/react-hot-loader/tree/master/examples/webpack-modern)
 - [Alchemy Base Config](https://github.com/daostack/alchemy/blob/dev/webpack.dev.config.js)
 - [Alchemy Dev Config](https://github.com/daostack/alchemy/blob/dev/webpack.dev.config.js)
 

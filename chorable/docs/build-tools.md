@@ -11,15 +11,19 @@
     + [x] html-webpack-plugin (dev)
     + [ ] react-hot-module
     + [x] webpack-merge (dev)
-- [ ] webpack.base.config
+- [ ] Add boilerplate...
+    + [ ] src/index.html
+    + [ ] src/index.jsx
+    + [ ] src/App.jsx
+- [ ] Create webpack.base.config...
     + [x] extensions
     + [ ] Module aliases
     + [x] Plugins
         * [x] new webpack.NoEmit
         * [x] HTMLWebpackPlugin
         * [x] DefinePlugin (version)
-- [ ] webpack.dev.config
-    + [ ] webpack-merge
+- [ ] Create webpack.dev.config...
+    + [x] webpack-merge
     + [ ] devtool
     + [ ] dev server
     + [ ] entry

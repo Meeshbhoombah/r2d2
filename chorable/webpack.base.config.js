@@ -32,6 +32,11 @@ module.exports = {
         query: {
             presets: ['react-hot-loader/babel', 'babel-preset-env'] 
         }
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader'
       }
     ]
   },
@@ -39,9 +44,12 @@ module.exports = {
 
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
+   
+    // build bundles in body of template 
     new HTMLWebpackPlugin({
       template: 'src/index.html'
     }),
+    
     new webpack.DefinePlugin({
         'VERSION': JSON.stringify(require('./package.json').version)
     })

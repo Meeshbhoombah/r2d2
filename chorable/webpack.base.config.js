@@ -14,7 +14,6 @@ module.exports = {
       src: path.resolve(basePath, 'src')
     }
   },
-
   
   module: {
     rules: [
@@ -40,7 +39,6 @@ module.exports = {
       }
     ]
   },
-
 
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),

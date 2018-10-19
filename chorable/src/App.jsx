@@ -1,15 +1,18 @@
 /*
- * index.js
- * Entrypoint for the `Chorable` web app
- *
- */ 
+* App.jx
+* Entrypoint for the `Chorable` web app
+*
+*/ 
 
 
-import React     from 'react';
-import ReactDOM  from 'react-dom';
-import App       from './App';
-
-// import global css styles to render on #root
+import React, { Component } from 'react';
 
 
+class App extends Component {
+  render() {
+    return (
+      <h1>Hello, World!</h1> 
+    );
+  }
+};
 

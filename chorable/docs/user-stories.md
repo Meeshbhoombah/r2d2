@@ -16,7 +16,10 @@ As a user...
 - [ ] I want to see this week's leaderboard 
     so that I can see how likely it is I will win the pool
 - [ ] I want to see my assigned chores
-    so that I can do chores
+    so that I can complete a chore and win back money
+    + [ ] I want to complete all my assigned chores chores
+        so that I can unlock access to winning the pool/chore immunity (unlock
+        `allChoresList`)
 - [ ] I want to see my bet
     so that I can reason why I was assigned those 
 - [ ] I want to complete a chore

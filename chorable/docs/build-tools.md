@@ -2,17 +2,31 @@
 
 ## Todos
 - [ ] Install...
-    + [ ] webpack
-    + [ ] webpack-dev-server (dev)
-    + [ ] style-loader/css-loader
-    + [ ] babel-loader
+    + [x] react/react-dom
+    + [x] webpack
+    + [x] webpack-dev-server (dev)
+    + [x] style-loader/css-loader
+    + [x] babel-loader
         * [ ] babel-preset-env
-    + [ ] html-webpack-plugin (dev)
+    + [x] html-webpack-plugin (dev)
+    + [ ] react-hot-module
+    + [x] webpack-merge (dev)
 - [ ] webpack.base.config
-    + [ ] devtool
+    + [x] extensions
     + [ ] Module aliases
+    + [x] Plugins
+        * [x] new webpack.NoEmit
+        * [x] HTMLWebpackPlugin
+        * [x] DefinePlugin (version)
 - [ ] webpack.dev.config
-    + [ ] Hot Module Reloader
+    + [ ] webpack-merge
+    + [ ] devtool
+    + [ ] dev server
+    + [ ] entry
+        * [ ] react-hmr
+    + [ ] Plugins
+        * [ ] new webpackHMR
+        * [ ] new webpack.namedModules
 
 ## Webpack
 - [When and Why to use Webpack](https://blog.andrewray.me/webpack-when-to-use-and-why/)

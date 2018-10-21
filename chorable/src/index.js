@@ -1,4 +1,5 @@
 /*
+ *
  * index.js
  * Entrypoint for the `Chorable` web app
  *

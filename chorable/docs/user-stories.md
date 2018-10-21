@@ -11,19 +11,24 @@ As a whitelisted user...
 As a user...
 - [ ] I want to increase my bet
     so that I can be assigned less chores next week
-- [ ] I want to see the pool I can win this week 
+    + [ ] Design
+- [ ] I want to **this week's pool**
     so that I want to do chores
-- [ ] I want to see this week's leaderboard 
+    + [x] Design
+- [ ] I want to see **this week's leaderboard**
     so that I can see how likely it is I will win the pool
-- [ ] I want to see my assigned chores
+    + [ ] Design
+- [ ] I want to **see my assigned chores**
     so that I can complete a chore and win back money
+    + [x] Design
+    + [ ] I want to complete a chore
+        so that I can win x money back (x = totalWeeklyBet/2 / numAssChores)
     + [ ] I want to complete all my assigned chores chores
         so that I can unlock access to winning the pool/chore immunity (unlock
         `allChoresList`)
 - [ ] I want to see my bet
     so that I can reason why I was assigned those 
-- [ ] I want to complete a chore
-    so that I can win x money back (x = totalWeeklyBet/2 / numAssChores)
+    + [x] Design
 - [ ] I want to confirm someone else's chore
     so that I can be assigned chores of lesser effort
 - [ ] I want to unlock all chores (by doing assigned)

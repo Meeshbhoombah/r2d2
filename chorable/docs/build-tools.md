@@ -1,4 +1,7 @@
 # Build Tools
+Was considering Swarm for a datastore but realized the system was far from
+necessary for what I'm building. Since I intend to run Chorable (currently) in
+r2, I can just store the data locally in a server or filesystem of my choice.
 
 ## Todos
 - [x] Install...
@@ -8,7 +11,7 @@
     + [x] style-loader/css-loader
     + [x] babel-loader
     + [x] html-webpack-plugin (dev)
-    + [ ] react-hot-module
+    + [x] react-hot-module
     + [x] webpack-merge (dev)
 - [ ] Add boilerplate...
     + [ ] src/index.html

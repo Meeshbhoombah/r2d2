@@ -4,8 +4,9 @@ the user can take.
 
 ## Landing Page
 As a whitelisted user...
-- [ ] I want to `getStarted`
+- [ ] I want to get started
     so that I can participate in Chorable
+    + [ ] Design
 
 ## Dashboard (main)
 As a user...
@@ -26,10 +27,10 @@ As a user...
     + [ ] I want to complete all my assigned chores chores
         so that I can unlock access to winning the pool/chore immunity (unlock
         `allChoresList`)
-- [ ] I want to see my bet
+- [ ] I want to **see my bet**
     so that I can reason why I was assigned those 
     + [x] Design
-- [ ] I want to confirm someone else's chore
+- [ ] I want to confirm another user's chore
     so that I can be assigned chores of lesser effort
 - [ ] I want to unlock all chores (by doing assigned)
     so that I can win the pool and chore immmunity next week
@@ -37,7 +38,6 @@ As a user...
     so that I can win the pool and chore immunity next week
 
 ## Scripts
+- Deploy contract to mainnet
 - Add an address to the whitelist
-
-
 

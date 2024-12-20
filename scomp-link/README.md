@@ -21,6 +21,7 @@ Or, find installation instructions [here](https://crates.io/crates/cargo-watch).
 
 ### Installation
 1. Install dependencies with `cargo`
+2. Add the Gmail API to your Google Project. Find instructions [here](https://developers.google.com/gmail/api/guides).
 
 ### Development
 ## Deployment

@@ -19,3 +19,9 @@ cargo install cargo-watch
 ```
 Or, find installation instructions [here](https://crates.io/crates/cargo-watch).
 
+### Installation
+1. Install dependencies with `cargo`
+
+### Development
+## Deployment
+

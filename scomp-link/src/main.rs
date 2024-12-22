@@ -77,7 +77,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .add_scope(Scope::new("https://www.googleapis.com/auth/gmail.readonly".to_string()))
         .url();
 
-    println!("Open this URL in your browser:\n{}", auth_url);
+    open::that(auth_url.to_string())?;
 
     // Get the authorization code from the user
     println!("Enter the authorization code:");
@@ -166,6 +166,9 @@ async fn fetch_email_details(
         .await?
         .json::<MessageDetails>()
         .await?;
+
+    // Print the response snippet as soon as it's fetched
+    println!("Fetched Email ID: {}, response: {:?}", message_id, response);
 
     Ok(response.snippet)
 }
